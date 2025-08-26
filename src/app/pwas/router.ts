@@ -24,7 +24,7 @@ export const router = (app: Router) => {
             try {
                 console.log('--------------------------------');
                 console.log(`Date time: ${new Date().toISOString()}`);
-                console.log('Ping Received From ID: ' + deviceid);
+                console.log('Troubleshoot payload received From ID: ' + deviceid);
                 console.log('Payload: ' + JSON.stringify(req.query));
                 res.status(200).send('OK');
             } catch (err) {
